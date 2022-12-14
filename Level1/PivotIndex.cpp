@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/find-pivot-index/description/?envType=study-plan&id=level-1
 class Solution {
 public:
     int pivotIndex(vector<int>& nums) {
