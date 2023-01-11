@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/n-ary-tree-preorder-traversal/description/
 
 # Unoptimized recursive solution, operating on each node's children if available and
-appending value to list result
+# appending value to list result
 
 class Solution(object):
     def preorder(self, root):
