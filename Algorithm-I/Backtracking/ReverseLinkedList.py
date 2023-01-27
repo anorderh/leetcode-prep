@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/reverse-linked-list/description/?envType=study-plan&id=algorithm-i
+# https://leetcode.com/problems/reverse-linked-list/description/
 
 # Definition for singly-linked list.
 # class ListNode:
@@ -15,8 +15,7 @@ class Solution:
             curr = head         # track head
             head = head.next    # progress head
 
-            curr.next = preev   # curr.next is previous
+            curr.next = prev   # curr.next is previous
             prev = curr         # assign prev w/ curr
         
-        return start
-        
+        return prev        
