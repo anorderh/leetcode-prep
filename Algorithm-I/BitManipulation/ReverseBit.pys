@@ -1,0 +1,12 @@
+# https://leetcode.com/problems/reverse-bits/?envType=study-plan&id=algorithm-i
+
+class Solution:
+    def reverseBits(self, n):
+        out = 0
+        for i in range(32):             # Iterate thru 32 bits
+            # Steps:
+            # "out << 1" - Shift out left to make space
+            # "n & 1" - Compares last digit with 1 to get 1 digit bit and appends if '1'
+            out = (out << 1)^(n & 1)
+            n >>= 1             # Shifting n right, to delete last digit
+        return out
