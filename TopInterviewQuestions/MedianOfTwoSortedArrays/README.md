@@ -23,7 +23,7 @@ Total # of elements: 13
 Total # of elements in half: 6 (always round down)
 ```
 
-<img title="" src="file:///var/folders/4v/x8hlmh7x77jfl2jff4n5fd6c0000gq/T/TemporaryItems/NSIRD_screencaptureui_wa4qZV/Screen%20Shot%202023-02-19%20at%202.51.35%20PM.png" alt="Screen Shot 2023-02-19 at 2.51.35 PM.png" width="508">
+<img title="" src="file:///var/folders/4v/x8hlmh7x77jfl2jff4n5fd6c0000gq/T/TemporaryItems/NSIRD_screencaptureui_wa4qZV/Screen%20Shot%202023-02-19%20at%202.51.35%20PM.png" alt="Screen Shot 2023-02-19 at 2.51.35 PM.png" width="666">
 
 Consider 2 arrays A and B. A's middle index is found to be 2. Let's consider indices 0-2 to be apart of the *left* partition. If a single partition's total should be 6 and indices 0-2 span 3 elements, then the left partition **needs 3 more elements**. Therefore, we pull 3 elements from B. 
 
@@ -35,7 +35,7 @@ How do we know if we found the correct left partition?
 
 2. Need to ensure left partition is **>= all elements in right partition**. 
 
-<img src="file:///var/folders/4v/x8hlmh7x77jfl2jff4n5fd6c0000gq/T/TemporaryItems/NSIRD_screencaptureui_64Smyt/Screen%20Shot%202023-02-19%20at%203.01.01%20PM.png" title="" alt="Screen Shot 2023-02-19 at 3.01.01 PM.png" width="554">
+<img title="" src="diagrams/4.png" alt="Screen Shot 2023-02-19 at 3.01.01 PM.png" width="703">
 
 * *Ensuring B's left-pedge is less than A's right-p edge*
 
@@ -49,7 +49,7 @@ With this complete, we understand that the **median is left-most element of the 
 
 In the previous example, a binary search wasn't needed. Now, let's remove array A's last element and consider this:
 
-<img src="file:///var/folders/4v/x8hlmh7x77jfl2jff4n5fd6c0000gq/T/TemporaryItems/NSIRD_screencaptureui_risjDk/Screen%20Shot%202023-02-19%20at%203.20.38%20PM.png" title="" alt="Screen Shot 2023-02-19 at 3.20.38 PM.png" width="565">
+<img title="" src="diagrams/2.png" alt="Screen Shot 2023-02-19 at 3.20.38 PM.png" width="761">
 
 Using A, we find the middle index to be at 1. 12 elements in total so a partition's size is 6. Indices 0-1 cover 2 elements, so 6-2 = 4, the partition needs 4 more elements!
 
@@ -63,7 +63,7 @@ BUT **'4' in the left partition is not less than or equal to '3' in the right pa
 
 Since we understand that we need extra elements from array A to be in the *left partition*, we update the 'L' pointer to be `mid_index + 1`.
 
-<img src="file:///var/folders/4v/x8hlmh7x77jfl2jff4n5fd6c0000gq/T/TemporaryItems/NSIRD_screencaptureui_AzSNzE/Screen%20Shot%202023-02-19%20at%203.27.32%20PM.png" title="" alt="Screen Shot 2023-02-19 at 3.27.32 PM.png" width="546">
+<img title="" src="diagrams/3.png" alt="Screen Shot 2023-02-19 at 3.27.32 PM.png" width="691">
 
 Now that we've repartitioned, let's begin the condition check.
 
