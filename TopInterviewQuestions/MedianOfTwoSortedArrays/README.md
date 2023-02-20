@@ -23,7 +23,7 @@ Total # of elements: 13
 Total # of elements in half: 6 (always round down)
 ```
 
-<img title="" src="file:///var/folders/4v/x8hlmh7x77jfl2jff4n5fd6c0000gq/T/TemporaryItems/NSIRD_screencaptureui_wa4qZV/Screen%20Shot%202023-02-19%20at%202.51.35%20PM.png" alt="Screen Shot 2023-02-19 at 2.51.35 PM.png" width="666">
+<img title="" src="diagrams/1.png" alt="Screen Shot 2023-02-19 at 2.51.35 PM.png" width="666">
 
 Consider 2 arrays A and B. A's middle index is found to be 2. Let's consider indices 0-2 to be apart of the *left* partition. If a single partition's total should be 6 and indices 0-2 span 3 elements, then the left partition **needs 3 more elements**. Therefore, we pull 3 elements from B. 
 
