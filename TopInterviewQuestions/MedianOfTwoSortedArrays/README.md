@@ -10,7 +10,7 @@
 
 * When a runtime of log is desired, binary search is used
 
-### Conceptual - Rethinking "medians"
+## Conceptual - Rethinking "medians"
 
 Using a sorted array, a median can be thought of as **an element that partitions the array into 2 equal halves.**
 
@@ -45,7 +45,7 @@ If these conditions are satisfied, **the left partition is correct.**
 
 With this complete, we understand that the **median is left-most element of the right partition**. To retrieve this, we use the *min* of the both arrays' right partitions.
 
-### Conceptual - Binary Search
+## Conceptual - Binary Search
 
 In the previous example, a binary search wasn't needed. Now, let's remove array A's last element and consider this:
 
@@ -69,7 +69,7 @@ Now that we've repartitioned, let's begin the condition check.
 
 * Most right element of left partition is LESS than all elements of right partition
 
-### Conceptual - Considering different lengths
+## Conceptual - Considering different lengths
 
 For the 1st example, the length was odd. So when factoring both partition's edges, *Min* was used. However, **now the length is even**. 
 
@@ -85,7 +85,7 @@ Finally, divide these values' sum by 2.
 
 When handling corner cases with partitions with 0 length, the values `infinity` and `-infinity` can be used to work with the condition check.
 
-### Code
+## Code
 
 ```python
 # Time: log(min(n, m))
