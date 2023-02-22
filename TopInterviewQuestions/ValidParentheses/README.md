@@ -2,10 +2,13 @@
 
 *provided by @Neetcode*
 
+<img src="youtubeimg.png" title="" alt="youtube" width="191"> 
 
-<img src="youtubeimg.png" title="" alt="youtube" width="191"> [Valid Parentheses - Stack - Leetcode 20 - Python - YouTube](https://www.youtube.com/watch?v=WTzjTskDFMg)
+[Valid Parentheses - Stack - Leetcode 20 - Python - YouTube](https://www.youtube.com/watch?v=WTzjTskDFMg)
 
-### Drafting & Initial Takeaways
+[Leetcode Question link](https://leetcode.com/problems/valid-parentheses/description/)
+
+## Drafting & Initial Takeaways
 
 * Can't ever start with a clothing parenthesis, bc nothing is open
 
@@ -21,13 +24,13 @@
   
   - Closing parentheses will be matched to **most recent** opening parentheses. From this, we can reason a **stack** would be most applicable
 
-<img src="file:///Users/anorde/Coding/Leetcode/TopInterviewQuestions/ValidParentheses/1.png" title="" alt="1.png" width="291">
+![1.png](1.png)
 
 - To ensure a closing parentheses *closes* an open parentheses, a relationship needs to be established
   
   - This can be done so using a **HashMap**
 
-![2.png](/Users/anorde/Coding/Leetcode/TopInterviewQuestions/ValidParentheses/2.png)
+![2.png](2.png)
 
 ## Complexity Analysis
 
