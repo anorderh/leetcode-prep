@@ -1,4 +1,4 @@
-## Leetcode Explanation
+## Leetcode Explanation - [PROBLEM TITLE]
 
 *provided by @Neetcode*
 
@@ -10,6 +10,8 @@
 ## Implementation
 
 ## Complexity Analysis
+
+## Algorithmic Takeways & Tells
 
 ## Code
 
